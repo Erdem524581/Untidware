@@ -1,33 +1,79 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marka Adı</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="mica-effect">
-        <div class="logo">Marka Adı</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Ev</a></li>
-                <li><a href="#about">Hakkında</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Hoş Geldiniz</h1>
-            <p>Windows 11 Mica tasarımıyla hazırlanmış bir siteye hoş geldiniz.</p>
-        </section>
-        <section id="about">
-            <h2>Hakkımızda</h2>
-            <p>Mica tasarımı, modern ve şık bir kullanıcı deneyimi sunar.</p>
-        </section>
-    </main>
-    <footer class="mica-effect">
-        <p>© 2024 Marka Adı. Tüm hakları saklıdır.</p>
-    </footer>
-</body>
-</html>
+/* Genel Stiller */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333; /* Yazılar için koyu bir renk */
+    line-height: 1.6;
+}
+
+/* Mica Efekti */
+.mica-effect {
+    background: rgba(255, 255, 255, 0.8); /* Hafif beyaz yarı saydam arka plan */
+    backdrop-filter: blur(10px); /* Bulanıklık efekti */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* İnce çerçeve */
+}
+
+/* Başlık ve Menü */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; /* Logo için koyu renk */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #000; /* Menü bağlantıları için koyu renk */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ana İçerik */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main section h1,
+main section h2 {
+    color: #000; /* Başlıklar için koyu renk */
+}
+
+/* Alt Bilgi */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #000; /* Alt bilgi yazısı için koyu renk */
+}
+
