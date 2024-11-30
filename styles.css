@@ -1,9 +1,20 @@
 /* Genel Stiller */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
     line-height: 1.6;
+}
+
+/* Mica Efekti */
+.mica-effect {
+    background: rgba(255, 255, 255, 0.1); /* Yarı saydam arka plan */
+    backdrop-filter: blur(10px); /* Bulanıklık efekti */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* İnce çerçeve */
 }
 
 /* Başlık ve Menü */
@@ -11,14 +22,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: #fff;
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #fff;
 }
 
 header nav ul {
@@ -45,6 +58,7 @@ header nav ul li a:hover {
 /* Ana İçerik */
 main {
     padding: 2rem;
+    text-align: center;
 }
 
 main section {
@@ -53,13 +67,13 @@ main section {
 
 main section h1,
 main section h2 {
-    color: #333;
+    color: #fff;
 }
 
 /* Alt Bilgi */
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 1rem 0;
+    position: relative;
+    bottom: 0;
 }
