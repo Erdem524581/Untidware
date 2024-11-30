@@ -5,7 +5,7 @@ body {
     padding: 0;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #333; /* Yazılar için koyu bir renk */
+    color: #333; /* Yazılar için koyu gri renk */
     line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2); /* İnce çerçeve */
 }
 
-/* Başlık ve Menü */
+/* Header ve Menü */
 header {
     display: flex;
     justify-content: space-between;
@@ -68,6 +68,19 @@ main section {
 main section h1,
 main section h2 {
     color: #000; /* Başlıklar için koyu renk */
+}
+
+/* Profil Fotoğrafı */
+.profile-image {
+    width: 150px; /* Fotoğrafın genişliği */
+    height: 150px; /* Fotoğrafın yüksekliği */
+    border-radius: 50%; /* Yuvarlak fotoğraf */
+    border: 3px solid #fff; /* Beyaz kenarlık */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Alt Bilgi */
