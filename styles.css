@@ -5,13 +5,13 @@ body {
     padding: 0;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #fff;
+    color: #333; /* Yazılar için koyu bir renk */
     line-height: 1.6;
 }
 
 /* Mica Efekti */
 .mica-effect {
-    background: rgba(255, 255, 255, 0.1); /* Yarı saydam arka plan */
+    background: rgba(255, 255, 255, 0.8); /* Hafif beyaz yarı saydam arka plan */
     backdrop-filter: blur(10px); /* Bulanıklık efekti */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge */
     border: 1px solid rgba(255, 255, 255, 0.2); /* İnce çerçeve */
@@ -31,7 +31,7 @@ header {
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #000; /* Logo için koyu renk */
 }
 
 header nav ul {
@@ -46,7 +46,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #000; /* Menü bağlantıları için koyu renk */
     text-decoration: none;
     font-size: 1rem;
 }
@@ -67,13 +67,12 @@ main section {
 
 main section h1,
 main section h2 {
-    color: #fff;
+    color: #000; /* Başlıklar için koyu renk */
 }
 
 /* Alt Bilgi */
 footer {
     text-align: center;
     padding: 1rem 0;
-    position: relative;
-    bottom: 0;
+    color: #000; /* Alt bilgi yazısı için koyu renk */
 }
